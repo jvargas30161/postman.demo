@@ -23,7 +23,14 @@
 									"\r",
 									"pm.test('Status code should be 201', function(){\r",
 									"    pm.response.to.be.have.status(201)\r",
-									"})"
+									"})\r",
+									"\r",
+									"pm.test('email should match', function(){\r",
+									"    pm.expect(jsonData.data.email).to.be.eq\r",
+									"    ('alex27_3022@gmail.com')\r",
+									"})\r",
+									"\r",
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -34,7 +41,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Alex5\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"alex_3022@gmail.com\",\r\n    \"status\": \"active\"\r\n}",
+							"raw": "{\r\n    \"name\": \"George Vargas\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"alex27_3022@gmail.com\",\r\n    \"status\": \"active\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -107,7 +114,7 @@
 									"\r",
 									"const jsonData = pm.response.json()\r",
 									"\r",
-									"pm.test('Status should inactive', function(){\r",
+									"pm.test('status should inactive', function(){\r",
 									"    pm.expect(jsonData.data.status).to.be.eq\r",
 									"        ('inactive')\r",
 									"})"
@@ -121,7 +128,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Alex5\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"alex_3022@gmail.com\",\r\n    \"status\": \"inactive\"\r\n}",
+							"raw": "{\r\n    \"name\": \"George Vargas\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"alex26_3022@gmail.com\",\r\n    \"status\": \"inactive\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -182,6 +189,36 @@
 					},
 					"response": []
 				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "1610fd9e6888f9578aacee5242d4766ba884d6d2698419278af7e80671269a01",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
 			]
 		},
 		{
@@ -211,7 +248,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Alex5\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"alex_3022@gmail.com\",\r\n    \"status\": \"active\"\r\n}",
+							"raw": "{\r\n    \"name\": \"Alex5\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"alex11_3027@gmail.com\",\r\n    \"status\": \"active\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -219,7 +256,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{url}}/{{visibility}}/{{version}}/users",
+							"raw": "{{protocol}}://{{url}}/{{visibility}}/{{version}}/users/",
 							"protocol": "{{protocol}}",
 							"host": [
 								"{{url}}"
@@ -227,7 +264,8 @@
 							"path": [
 								"{{visibility}}",
 								"{{version}}",
-								"users"
+								"users",
+								""
 							]
 						}
 					},
@@ -280,7 +318,7 @@
 									"\r",
 									"const jsonData = pm.response.json()\r",
 									"\r",
-									"pm.test('Status should inactive', function(){\r",
+									"pm.test('status should inactive', function(){\r",
 									"    pm.expect(jsonData.data.status).to.be.eq\r",
 									"        ('inactive')\r",
 									"})"
@@ -294,7 +332,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Alex5\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"alex_3022@gmail.com\",\r\n    \"status\": \"inactive\"\r\n}",
+							"raw": "{\r\n    \"name\": \"Alex5\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"alex11_3027@gmail.com\",\r\n    \"status\": \"inactive\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -350,6 +388,36 @@
 						}
 					},
 					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "1610fd9e6888f9578aacee5242d4766ba884d6d2698419278af7e80671269a01",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
 				}
 			]
 		}
