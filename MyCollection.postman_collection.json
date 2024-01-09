@@ -27,7 +27,7 @@
 									"\r",
 									"pm.test('email should match', function(){\r",
 									"    pm.expect(jsonData.data.email).to.be.eq\r",
-									"    ('alex27_3022@gmail.com')\r",
+									"    ('alex29_3025@gmail.com')\r",
 									"})\r",
 									"\r",
 									""
@@ -41,7 +41,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"George Vargas\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"alex27_3022@gmail.com\",\r\n    \"status\": \"active\"\r\n}",
+							"raw": "{\r\n    \"name\": \"George Vargas Sanch\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"alex29_3025@gmail.com\",\r\n    \"status\": \"active\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
