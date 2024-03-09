@@ -27,7 +27,7 @@
 									"\r",
 									"pm.test('email should match', function(){\r",
 									"    pm.expect(jsonData.data.email).to.be.eq\r",
-									"    ('alex29_3025@gmail.com')\r",
+									"    ('jorgea_1@gmail.com')\r",
 									"})\r",
 									"\r",
 									""
@@ -41,7 +41,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"George Vargas Sanch\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"alex29_3025@gmail.com\",\r\n    \"status\": \"active\"\r\n}",
+							"raw": "{\r\n    \"name\": \"Jorge Benites Talledo\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"jorgea_1@gmail.com\",\r\n    \"status\": \"active\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -128,7 +128,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"George Vargas\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"alex26_3022@gmail.com\",\r\n    \"status\": \"inactive\"\r\n}",
+							"raw": "{\r\n    \"name\": \"Luis Trelles\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"alex26123_3022@gmail.com\",\r\n    \"status\": \"inactive\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -237,6 +237,11 @@
 									"\r",
 									"pm.test('Status code should be 201', function(){\r",
 									"    pm.response.to.be.have.status(201)\r",
+									"})\r",
+									"\r",
+									"pm.test('email should match', function(){\r",
+									"    pm.expect(jsonData.data.email).to.be.eq\r",
+									"    ('Qalex111_3027@gmail.com')\r",
 									"})"
 								],
 								"type": "text/javascript"
@@ -248,7 +253,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Alex5\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"alex11_3027@gmail.com\",\r\n    \"status\": \"active\"\r\n}",
+							"raw": "{\r\n    \"name\": \"Juan Torres Vargas\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"Qalex111_3027@gmail.com\",\r\n    \"status\": \"active\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -332,7 +337,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Alex5\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"alex11_3027@gmail.com\",\r\n    \"status\": \"inactive\"\r\n}",
+							"raw": "{\r\n    \"name\": \"Juan Torres Vargas\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"alex111_3027@gmail.com\",\r\n    \"status\": \"inactive\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
