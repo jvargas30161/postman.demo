@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "a1bb47fe-fc16-448b-a152-c1151a6e4074",
+		"_postman_id": "f8eacc66-41e2-4961-8d90-81df886fab00",
 		"name": "MyCollection",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "18201781",
-		"_collection_link": "https://restless-crescent-105076.postman.co/workspace/Curso_Python_Sql~6bd07f17-6424-4486-a6cd-bd4c2310c230/collection/18201781-a1bb47fe-fc16-448b-a152-c1151a6e4074?action=share&source=collection_link&creator=18201781"
+		"_collection_link": "https://restless-crescent-105076.postman.co/workspace/Curso_Python_Sql~6bd07f17-6424-4486-a6cd-bd4c2310c230/collection/18201781-f8eacc66-41e2-4961-8d90-81df886fab00?action=share&source=collection_link&creator=18201781"
 	},
 	"item": [
 		{
@@ -241,10 +241,11 @@
 									"\r",
 									"pm.test('email should match', function(){\r",
 									"    pm.expect(jsonData.data.email).to.be.eq\r",
-									"    ('Qalex111_3027@gmail.com')\r",
+									"    ('QJaRlex111_3027@gmail.com')\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -253,7 +254,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Juan Torres Vargas\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"Qalex111_3027@gmail.com\",\r\n    \"status\": \"active\"\r\n}",
+							"raw": "{\r\n    \"name\": \"Juan Torres Vargas B.\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"QJaRlex111_3027@gmail.com\",\r\n    \"status\": \"active\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -328,7 +329,8 @@
 									"        ('inactive')\r",
 									"})"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -337,7 +339,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Juan Torres Vargas\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"alex111_3027@gmail.com\",\r\n    \"status\": \"inactive\"\r\n}",
+							"raw": "{\r\n    \"name\": \"Juan Torres Vargas B\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"QJaRlex111_3027@gmail.com\",\r\n    \"status\": \"inactive\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
